@@ -27,7 +27,6 @@ class Service(enterprise.SOAPService):
     @enterprise.soap(String, _returns=String)
     def echo(self, mystring):
         """ Function that return the string in args
-        
         Args:
             mystring : string
 
@@ -39,20 +38,17 @@ class Service(enterprise.SOAPService):
     @enterprise.soap(Integer, Integer, _returns=Integer)
     def sum(self, x, y):
         """ Function to sum two integer
-        
         Args:
             x : int
             y : int
-            
         Returns:
             return an int
         """
         return x+y
-    
+
     @enterprise.soap(Integer, Integer, _returns=Boolean)
     def equal(self, x, y):
         """ Function to compare two integer
-        
         Args:
             x : int
             y : int
